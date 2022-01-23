@@ -7,7 +7,7 @@ public class TestaCriacaoDeConta {
 		patricia.setCpf("222.222.222-22");
 		patricia.setProfissao("Desenvolvedora Full Stack");
 
-		Conta contaPatricia = new Conta();
+		Conta contaPatricia = new Conta(1337, 24246);
 		//composição de objetos
 		contaPatricia.setTitular(patricia);
 
