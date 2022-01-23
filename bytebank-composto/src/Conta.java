@@ -1,14 +1,14 @@
 public class Conta {
-	double saldo;
-	int agencia;
-	int numero;
-	Cliente titular;
+	private double saldo;
+	private int agencia;
+	private int numero;
+	private Cliente titular;
 
-	public void deposita(double valor) {
+	public void deposit(double valor) {
 		this.saldo += valor;
 	}
 
-	public boolean saca(double valor) {
+	public boolean withdraw(double valor) {
 		if (this.saldo >= valor) {
 			this.saldo -= valor;
 			return true;
@@ -16,12 +16,42 @@ public class Conta {
 		return false;
 	}
 
-	public boolean transfere(Conta contaDestino, double valor) {
+	public boolean transfer(Conta contaDestino, double valor) {
 		if (this.saldo >= 0) {
-			saca(valor);
-			contaDestino.deposita(valor);
+			withdraw(valor);
+			contaDestino.deposit(valor);
 			return true;
 		}
 		return false;
 	}
+	
+	 public double getSaldo() {
+		return saldo;
+	}
+	 
+		public int getAgencia() {
+			return agencia;
+		}
+
+		public void setAgencia(int agencia) {
+			this.agencia = agencia;
+		}
+
+		public int getNumero() {
+			return numero;
+		}
+
+		public void setNumero(int numero) {
+			this.numero = numero;
+		}
+		
+
+		public Cliente getTitular() {
+			return titular;
+		}
+
+		public void setTitular(Cliente titular) {
+			this.titular = titular;
+		}
+
 }
