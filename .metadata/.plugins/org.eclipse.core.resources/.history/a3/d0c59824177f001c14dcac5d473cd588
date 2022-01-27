@@ -1,0 +1,17 @@
+
+public class Cliente implements IAutenticavel {
+
+	private int senha;
+
+	@Override
+	public boolean autentica(int senha) {
+		return this.senha == senha;
+
+	}
+
+	@Override
+	public void setSenha(int senha) {
+		this.senha = senha;
+	}
+
+}
