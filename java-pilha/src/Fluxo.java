@@ -5,11 +5,11 @@ public class Fluxo {
 		System.out.println("Início do main");
 		try {
 			metodo1();
-		} catch (ArithmeticException  | NullPointerException ex) {
+		} catch (ArithmeticException | NullPointerException ex) {
 			String mensagemException = ex.getMessage();
 			System.out.println("Exception " + mensagemException);
 			ex.printStackTrace();
-		} 
+		}
 		System.out.println("Fim do main");
 	}
 
@@ -25,8 +25,8 @@ public class Fluxo {
 			System.out.println(i);
 
 			int a = i / 0;
-			//Conta conta = null;
-			//conta.getAgencia();
+			// Conta conta = null;
+			// conta.getAgencia();
 		}
 		System.out.println("Fim do metodo2");
 	}
