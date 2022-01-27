@@ -1,5 +1,5 @@
 
-public class Gerente extends Funcionario{
+public class Gerente extends Funcionario {
 	private int senha;
 
 	public boolean autentica(int senha) {
@@ -10,8 +10,9 @@ public class Gerente extends Funcionario{
 		this.senha = senha;
 	}
 
+	@Override
 	public double getBonificacao() {
-		//super: atributo vem diretamente do pai
-		return super.getBonificacao() +  super.getSalario();
+		// super: atributo vem diretamente do pai
+		return super.getSalario();
 	}
 }

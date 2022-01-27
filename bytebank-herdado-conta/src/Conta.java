@@ -1,5 +1,5 @@
-public class Conta {
-	private double saldo;
+public abstract class Conta {
+	protected double saldo;
 	private int agencia;
 	private int numero;
 	private Cliente titular;
@@ -11,14 +11,12 @@ public class Conta {
 		this.agencia = agencia;
 		this.numero = numero;
 	}
-	
+
 	public Conta() {
 		Conta.total++;
 	}
 
-	public void deposit(double valor) {
-		this.saldo += valor;
-	}
+	public abstract void deposit(double valor);
 
 	public boolean withdraw(double valor) {
 		if (this.saldo >= valor) {
@@ -36,40 +34,37 @@ public class Conta {
 		}
 		return false;
 	}
-	
-	 public double getSaldo() {
+
+	public double getSaldo() {
 		return saldo;
 	}
-	 
-		public int getAgencia() {
-			return agencia;
-		}
 
-		public void setAgencia(int agencia) {
-			this.agencia = agencia;
-		}
+	public int getAgencia() {
+		return agencia;
+	}
 
-		public int getNumero() {
-			return numero;
-		}
+	public void setAgencia(int agencia) {
+		this.agencia = agencia;
+	}
 
-		public void setNumero(int numero) {
-			this.numero = numero;
-		}
-		
+	public int getNumero() {
+		return numero;
+	}
 
-		public Cliente getTitular() {
-			return titular;
-		}
+	public void setNumero(int numero) {
+		this.numero = numero;
+	}
 
-		public void setTitular(Cliente titular) {
-			this.titular = titular;
-		}
-		
+	public Cliente getTitular() {
+		return titular;
+	}
 
-		public static int getTotal() {
-			return total;
-		}
-		
+	public void setTitular(Cliente titular) {
+		this.titular = titular;
+	}
+
+	public static int getTotal() {
+		return total;
+	}
 
 }
