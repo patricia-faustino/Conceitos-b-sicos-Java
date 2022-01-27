@@ -1,15 +1,14 @@
 
 public class ContaCorrente extends Conta implements Tributavel {
-	
+
 	public ContaCorrente(int agencia, int numero) {
 		super(agencia, numero);
 	}
-	
 
 	@Override
-	public boolean withdraw(double valor) {
+	public void withdraw(double valor) throws SaldoInsuficienteException {
 		double valorMaisTaxa = valor + 0.2;
-		return super.withdraw(valorMaisTaxa);
+		super.withdraw(valorMaisTaxa);
 	}
 
 	@Override
@@ -21,6 +20,5 @@ public class ContaCorrente extends Conta implements Tributavel {
 	public double getValorImposto() {
 		return super.saldo * 0.01;
 	}
-	
 
 }

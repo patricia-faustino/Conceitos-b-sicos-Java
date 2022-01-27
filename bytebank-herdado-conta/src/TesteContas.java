@@ -7,8 +7,12 @@ public class TesteContas {
 
 		ContaPoupanca contaPoupanca = new ContaPoupanca(222, 222);
 		contaPoupanca.deposit(200.00);
-
-		contaCorrente.transfer(contaPoupanca, 10.0);
+		try {
+			contaCorrente.transfer(contaPoupanca, 10.0);
+		}
+		catch(Exception ex) {
+			System.out.println(ex.getMessage());
+		}
 
 		System.out.println("Saldo Conta Corrente: " + contaCorrente.getSaldo());
 		System.out.println("Saldo Conta Poupança: " + contaPoupanca.getSaldo());
