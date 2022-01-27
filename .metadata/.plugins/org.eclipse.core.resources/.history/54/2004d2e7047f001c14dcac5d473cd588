@@ -1,0 +1,8 @@
+
+public class ContaPoupanca {
+
+	public ContaPoupanca() {
+		// TODO Auto-generated constructor stub
+	}
+
+}
