@@ -1,8 +1,10 @@
 
 public class ContaCorrente extends Conta implements Tributavel {
+	public CalculadorImposto calculadorImposto;
 	
 	public ContaCorrente(int agencia, int numero) {
 		super(agencia, numero);
+//		this.calculadorImposto = new CalculadorImposto();
 	}
 	
 
