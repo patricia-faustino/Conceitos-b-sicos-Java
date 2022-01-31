@@ -11,6 +11,10 @@ public class TesteContas {
 
 		ContaPoupanca contaPoupanca = new ContaPoupanca(222, 222);
 		contaPoupanca.deposit(200.00);
+		
+		System.out.println(contaCorrente);
+		System.out.println(contaPoupanca);
+		
 		try {
 			contaCorrente.transfer(contaPoupanca, 10.0);
 		}
