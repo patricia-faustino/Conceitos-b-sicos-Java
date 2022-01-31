@@ -5,6 +5,5 @@ import br.com.bytebank.banco.modelo.ContaCorrente;
 
 public class TesteBibliotecas {
 
-	Conta  contaCorrente = new ContaCorrente(123, 321);
-
+	Conta  conta = new ContaCorrente(123, 321); 
 }
