@@ -5,3 +5,4 @@ public class MinhaExcecao extends Exception {
 		super(message);
 	}
 }
+ 
