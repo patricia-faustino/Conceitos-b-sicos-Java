@@ -6,4 +6,9 @@
     <fullyQualifiedTypeName name="java.lang.annotation.Target"/>
     <fullyQualifiedTypeName name="java.lang.annotation.RetentionPolicy"/>
     <fullyQualifiedTypeName name="java.lang.ArithmeticException"/>
+    <fullyQualifiedTypeName name="modelo.ContaCorrente"/>
+    <fullyQualifiedTypeName name="modelo.ContaPoupanca"/>
+    <fullyQualifiedTypeName name="br.com.bytebank.banco.modelo.Conta"/>
+    <fullyQualifiedTypeName name="br.com.bytebank.banco.modelo.ContaCorrente"/>
+    <fullyQualifiedTypeName name="br.com.alura.bytebank.TesteBibliotecas"/>
 </qualifiedTypeNameHistroy>
