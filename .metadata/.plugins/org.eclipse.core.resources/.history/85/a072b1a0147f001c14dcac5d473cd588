@@ -1,9 +1,0 @@
-
-public class Gerente extends Autenticavel {
-
-	@Override
-	public double getBonificacao() {
-		// super: atributo vem diretamente do pai
-		return super.getSalario();
-	}
-}
