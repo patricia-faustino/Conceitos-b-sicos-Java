@@ -2,11 +2,11 @@ import java.io.IOException;
 import java.io.PrintStream;
 import java.io.PrintWriter;
 
-public class TesteEscrita2 {
+public class TesteEscritaPrintStreamPrintWriter {
 
 	public static void main(String[] args) throws IOException {
 
-		PrintWriter pw = new PrintWriter("loremipsum2.txt");
+		PrintWriter pw = new PrintWriter("loremipsum2.txt", "UTF-8");
 
 		PrintStream ps = new PrintStream("loremipsum2.txt");
 		ps.println("Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod");

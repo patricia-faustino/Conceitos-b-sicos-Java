@@ -14,7 +14,7 @@ public class TesteEscritaELeitura {
 	public static void main(String[] args) throws IOException {
 
 		InputStream fis = System.in;
-		Reader isr = new InputStreamReader(fis);
+		Reader isr = new InputStreamReader(fis, "UTF8");
 		BufferedReader br = new BufferedReader(isr);
 		
 		OutputStream fos = new FileOutputStream("loremipsum2.txt");
